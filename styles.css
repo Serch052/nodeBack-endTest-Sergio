@@ -6,6 +6,7 @@
     --clr-section-3 : #008F8C;
     --clr-section-4 : #015958;
     --clr-section-5 : #023535;
+    --font-family: 'Plus Jakarta Sans'
 }
 
 *,
@@ -17,6 +18,10 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font-family);
 }
 
 .navbar{
