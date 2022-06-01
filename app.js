@@ -7,7 +7,9 @@ app.get('/', (req, res)=>{
 })
 
 // server configuration
-const PORT = 1111;
+//const PORT = 1111;
+
+const PORT = process.env.PORT || 1111
 app.set('port', PORT);
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
@@ -17,3 +19,4 @@ app.use(express.json());
 app.listen(app.get('port'), () => {
     console.log(`Server running on port ${PORT}`);
 })
+
